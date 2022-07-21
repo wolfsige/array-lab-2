@@ -175,8 +175,9 @@ const numArrays = [
 ];
 
 // Complete Exercise 13 below...
+let numList = []
 
-
+numList.push(numArrays.pop())
 
 console.log('Exercise 13 Result:\n', numList);
 
