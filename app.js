@@ -188,7 +188,10 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
+let num = numArrays[2][1]
 
+//let num = numArrays.slice(2).pop().pop()
+  //im not sure why this works if im honest. My best guess is that I slice the array to isolate the nested array i want, pop it giving me just the "array" and not the "nested array" version becasue i guess those are different, then poping once again gives me the value of 66.
 
 console.log('Exercise 14 Result:\n', num);
 
