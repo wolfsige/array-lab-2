@@ -175,10 +175,12 @@ const numArrays = [
 ];
 
 // Complete Exercise 13 below...
-let numList = []
 
-numList.push(numArrays.pop())
+let numList = numArrays[numArrays.length - 1]
 
+//numList.push(numArrays.pop())
+  //this works however it mutates the array making it so that the total found in exercise 15 is off
+  
 console.log('Exercise 13 Result:\n', numList);
 
 /*
@@ -188,7 +190,7 @@ Exercise 14:
 
 // Complete Exercise 14 below...
 
-let num = numArrays[2][1]
+const num = numArrays[2][1]
 
 //let num = numArrays.slice(2).pop().pop()
   //im not sure why this works if im honest. My best guess is that I slice the array to isolate the nested array i want, pop it giving me just the "array" and not the "nested array" version becasue i guess those are different, then poping once again gives me the value of 66.
@@ -203,6 +205,12 @@ Exercise 15:
 
 // Complete Exercise 15 below...
 
+total = 0
 
+numArrays.forEach(numArray => {
+  numArray.forEach(num => {
+    total += num
+  });
+});
 
 console.log('Exercise 15 Result:\n', total);
